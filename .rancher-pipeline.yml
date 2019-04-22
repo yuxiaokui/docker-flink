@@ -1,0 +1,11 @@
+stages:
+- name: build
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./1.8/scala_2.11-alpine/Dockerfile
+      buildContext: .
+      tag: flink:1.8-scala_2.11-alpine
+      pushRemote: true
+      registry: registry.wsmfin.com
+timeout: 60
+notification: {}
