@@ -16,7 +16,7 @@
 # limitations under the License.
 ###############################################################################
 
-FROM openjdk:8-jre
+FROM registry.wsmfin.com/openjdk:8-jre
 
 # Install dependencies
 RUN set -ex; \
