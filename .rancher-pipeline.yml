@@ -2,9 +2,9 @@ stages:
 - name: build
   steps:
   - publishImageConfig:
-      dockerfilePath: ./1.8/scala_2.11-alpine/Dockerfile
+      dockerfilePath: ./1.8/scala_2.11-debian/Dockerfile
       buildContext: .
-      tag: flink:1.8-scala_2.11-alpine
+      tag: flink:1.8-scala_2.11-debian
       pushRemote: true
       registry: registry.wsmfin.com
 timeout: 60
