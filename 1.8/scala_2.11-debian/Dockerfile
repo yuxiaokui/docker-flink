@@ -18,6 +18,8 @@
 
 FROM registry.wsmfin.com/openjdk:8-jre
 
+
+RUN sed -i 's/deb.debian.org/mirrors.scau.edu.cn/g' /etc/apt/sources.list
 # Install dependencies
 RUN set -ex; \
   apt-get update; \
